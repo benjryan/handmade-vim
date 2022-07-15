@@ -6,7 +6,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "bryan-theme"
+let colors_name = "handmade-vim"
 
 function! s:HL(group, fg, ...)
   " Arguments: group, guifg, guibg, gui, guisp
@@ -82,6 +82,7 @@ let s:bar_active = ["#A8A8A8", 248]
 let s:base = ["#161616", 16]
 let s:column = ["#222222", 0]
 let s:line = ["#101049", 0]
+let s:pmenu = ["#111111", 0]
 
 let s:none = ['NONE', 'NONE']
 let s:underline = 'underline,'
@@ -176,7 +177,7 @@ hi! link Typedef Statement
 
 if version >= 700
   " Popup menu: normal item
-  call s:HL('Pmenu', s:default, s:back)
+  call s:HL('Pmenu', s:default, s:pmenu)
   " Popup menu: selected item
   hi! link PmenuSel Search
 endif
