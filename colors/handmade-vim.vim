@@ -56,7 +56,7 @@ endfunction
 
 " Colors
 
-let s:back = ['#161616', 233]
+let s:back = ['#101010', 233]
 "let s:default = ['#A08563', 137]
 let s:default = ['#BD9F76', 137]
 
@@ -106,11 +106,11 @@ hi! link WildMenu Search
 call s:HL('ErrorMsg', s:special)
 
 " Line number for :number and :# commands
-call s:HL('LineNr', s:default, s:back)
-call s:HL('CursorLineNr', s:keyword, s:back)
+call s:HL('LineNr', s:default, s:none)
+call s:HL('CursorLineNr', s:keyword, s:none)
 
 " Tilde (~)
-call s:HL('NonText', s:back, s:back)
+call s:HL('NonText', s:none, s:none)
 
 " Character under cursor
 call s:HL('Cursor', s:none, s:cursor)
@@ -203,7 +203,7 @@ hi! link markdownH2 Statement
 hi! link markdownH3 Statement
 
 hi! link markdownLinkText Statement
-call s:HL('markdownLinkText', s:keyword, s:back, s:underline)
+call s:HL('markdownLinkText', s:keyword, s:none, s:underline)
 
 " Custom
 call s:HL('ColorColumn', s:none, s:column)
