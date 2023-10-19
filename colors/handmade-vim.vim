@@ -113,8 +113,8 @@ call s:HL('CursorLineNr', s:keyword, s:none)
 call s:HL('NonText', s:none, s:none)
 
 " Character under cursor
-call s:HL('Cursor', s:none, s:cursor)
-call s:HL('MatchParen', s:back, s:match)
+call s:HL('Cursor', s:none, s:none)
+call s:HL('MatchParen', s:none, s:match)
 
 call s:HL('Comment', s:comment)
 call s:HL('Todo', s:preproc)
